@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин товаров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Магазин товаров</h1>
+
+        <div class="controls">
+
+            <!-- 6. Поиск -->
+            <input type="text" id="searchInput" placeholder="Поиск товара по названию...">
+
+            <!-- 4. Фильтр по категориям -->
+            <select id="categorySelect">
+                <option value="all">Все категории</option>
+                <option value="electronics">Электроника</option>
+                <option value="clothing">Одежда</option>
+                <option value="jewelery">Украшения</option>
+                <option value="men's clothing">Мужская одежда</option>
+                <option value="women's clothing">Женская одежда</option>
+            </select>
+
+            <!-- 5. Сортировка по цене -->
+            <select id="sortSelect">
+                <option value="default">По умолчанию</option>
+                <option value="asc">Сначала дешевые</option>
+                <option value="desc">Сначала дорогие</option>
+            </select>
+
+        </div>
+
+        <!-- 1. Загрузка и отображение товаров -->
+        <!-- 2. Loading анимация -->
+        <div id="productsContainer" class="products-grid">
+
+            <div class="loader">
+                <div class="spinner"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
